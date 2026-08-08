@@ -223,39 +223,7 @@ class InvoiceIQ:
 
 <br/>
 
-1. In `lireshnv/lireshnv` → **Actions → New workflow → set up a workflow yourself**
-2. Save as `.github/workflows/snake.yml`:
 
-```yaml
-name: Generate Snake
-on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-3. Commit → the snake regenerates from your live contribution graph automatically.
 
 </details>
 
@@ -263,15 +231,7 @@ jobs:
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:0D1F0D&height=60&section=header" width="100%"/>
 </div>
 
-## `0x07` root@currently_exploring
-
 <div align="center">
-
-| `RESEARCH` | `VISUAL_SYSTEMS` |
-|---|---|
-| Traditional dev vs. Zoho Creator low-code — case study | Cinematic color grading pipelines for landscape reels |
-| Multi-agent orchestration patterns | Cafe/indie aesthetic — film grain, vintage tone curves |
-| Predictive modeling for public health | Music curation for visual storytelling |
 
 </div>
 
